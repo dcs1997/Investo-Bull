@@ -31,22 +31,21 @@ public class MyController {
 		
 		Stock save= serv.addStock(st);
 		
-		return new ResponseEntity<>(save, HttpStatus.OK);
-		
-		
+		return new ResponseEntity<>(save, HttpStatus.OK);	
 	}
+	
+	
 	
 	@GetMapping("/AllStocks")
 	public ResponseEntity <List<Stock>> ListOfStock() throws StockException{
 		
 		List<Stock> st = serv.getAllStocks();
 		return new ResponseEntity<>(st, HttpStatus.OK);
-		
 	}
 	
 	
 	
-	//Merge Stocks data
+	//Merge Stocks data in K number of parts
 	
 	@GetMapping("/mergeStocks/{num}")
 	public ResponseEntity <List<Stock>> mergingStocks (@PathVariable Integer num) throws StockException{
@@ -56,23 +55,9 @@ public class MyController {
 		
 	}
 	
-	
-	
-	
-	
-//	@GetMapping("/mergeStocks/{num}")
-//	public ResponseEntity <List<Double>> mergingStocks (@PathVariable Integer num) throws StockException{
-//		
-//		List<Double> st = serv.mergeStocks(num);
-//		return new ResponseEntity<>(st, HttpStatus.OK);
-//		
-//	}
-	
-	
+
 	
 	//ORB 
-	
-	
 	@GetMapping("/ORB/{num}")
 	public ResponseEntity <String> OpeningRange(@PathVariable Integer num) throws StockException{
 		
