@@ -1,70 +1,69 @@
 
-
-
-# Stock Market Application
+# **Stock Market Application**
 
 ## Introduction
-A brief introduction of your project goes here. You may want to cover the purpose of your project, its core functionality, and what problems it solves.
+This Spring Boot Web Service Application is for Stock Management, this application provides a user-friendly interface to interact with stock-related data, offering essential operations such as creating new stock data, retrieving all stock information, finding opening range breakouts, and merging candle data.
+the key features of this application are
 
-In this project I  have created a web service application using springBoot in which we can create data, get all
+Create Stock Data:
+This feature is used for creating Stock data
 
-## Deplolyed App
-https://deployed-site.whatever
+Get All Stock Data:
+This feature fetches all the data which is inserted inside the database
 
-## Video Walkthrough of the project
+Opening Range Breakout Finder:
+This feature uses Opening Breakout Range and gives information to the user about how volatile the market is.
+
+Merge Candle's Data:
+This feature allows the user to fetch data with respect to time so the user can merge data with specific time intervals.
+
+
+
+## Deployed App
+[https://deployed-site.whatever](https://github.com/dcs1997/Investo-Bull)
+
+
 
 ## Features
 List out the key features of your application.
-
 -  To get All Stocks Information
 -  To find the highest/Lowest Opening Range Breakout (ORB)
 -  Merge the stocks with respect to time.
 
-## design decisions or assumptions
-List your design desissions & assumptions
+
 
 ## Installation & Getting started
-Detailed instructions on how to install, configure, and get the project running.
+Open this application in Eclipse and create a maven project with dependencies such as:
+Spring Data JPA
+MySQL Driver
+Spring Web
+Devtool
+Note: Spring Security can also be added to this program in the future.
 
-```bash
-npm install my-project
-cd my-project
-npm start
-```
+
 
 ## Usage
 Provide instructions and examples on how to use your project.
+Open Postman
+Fire the POST request and add data respectively
+Then By Using the GET method user can fetch data with respect to their needs.
+<img width="1440" alt="image" src="https://github.com/dcs1997/Investo-Bull/assets/107552890/88c067ed-fdea-4b82-b648-db96aa6911d7">
 
-```bash
-# Example
-```
-
-Include screenshots as necessary.
-
-## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
 
 
 ## API Endpoints
-In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-
 
 POST/http://localhost:8080/Stocks - To create a new item
 
-
 GET/http://localhost:8080/AllStocks - To retrieve all items
 
-
 GET/ http://localhost:8080/ORB/60 -  To find the ORB
-
 
 GET/http://localhost:8080/mergeStocks/60 -  Merge stocks with respect to time
 
 
 
 ## Technology Stack
-List and provide a brief overview of the technologies used in the project.
-
 - Mysql
 - SpringBoot
 - RestAPI
