@@ -1,10 +1,12 @@
-# Investo-Bull
 
 
-# Project Title
+
+# Stock Market Application
 
 ## Introduction
 A brief introduction of your project goes here. You may want to cover the purpose of your project, its core functionality, and what problems it solves.
+
+In this project I  have created a web service application using springBoot in which we can create data, get all
 
 ## Deplolyed App
 https://deployed-site.whatever
@@ -14,9 +16,9 @@ https://deployed-site.whatever
 ## Features
 List out the key features of your application.
 
-- Feature 1
-- Feature 2
-- Feature 3
+-  To get All Stocks Information
+-  To find the highest/Lowest Opening Range Breakout (ORB)
+-  Merge the stocks with respect to time.
 
 ## design decisions or assumptions
 List your design desissions & assumptions
@@ -42,16 +44,27 @@ Include screenshots as necessary.
 ## APIs Used
 If your application relies on external APIs, document them and include any necessary links or references.
 
+
 ## API Endpoints
 In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-GET /api/items - retrieve all items
-POST /api/items - create a new item
+
+
+POST/http://localhost:8080/Stocks - To create a new item
+
+
+GET/http://localhost:8080/AllStocks - To retrieve all items
+
+
+GET/ http://localhost:8080/ORB/60 -  To find the ORB
+
+
+GET/http://localhost:8080/mergeStocks/60 -  Merge stocks with respect to time
+
 
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
 
-- Node.js
-- Express.js
-- MongoDB
-- Other libraries/modules
+- Mysql
+- SpringBoot
+- RestAPI
